@@ -395,7 +395,8 @@ header h1 {
 
 .experiencia-class p{
   margin-bottom: 5px;
-}
+} 
+
 @media (max-width: 740px) {
   .experiencia-class {
     margin: 20px 0px; /* Margem menor para janelas menores que 740px */

@@ -1,0 +1,514 @@
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap");
+
+body {
+  color: #f5f0fd;
+  font: 400 16px "Asap", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #740606;
+  font-size: 20px;
+  margin: 10px 40px;
+  text-align: justify;
+}
+
+header {
+  text-align: center;
+  margin-top: 25px;
+  height: 100%;
+}
+
+header h1 {
+  font-size: 35px;
+  color: #f5f0fd;
+}
+
+.cargos {
+  justify-content: center;
+  margin-top: 40px;
+}
+
+@media (max-width: 740px) {
+  header h1 {
+    font-size: 25px;
+  }
+}
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.contacts img {
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+}
+
+.title-imgs {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+#email,
+#github,
+#linkedin {
+  cursor: pointer;
+}
+.imagens-fundo img {
+  position: fixed; /* Fixa as imagens no lugar */
+  width: 100px; /* Largura da imagem */
+  height: 100px; /* Altura da imagem */
+}
+
+@keyframes dance1 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-5px) rotate(-5deg);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(5px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dance2 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(5px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-5px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dance3 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-8px) rotate(-7deg);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-4px) rotate(5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dance4 {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(6px) rotate(9deg);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-4px) rotate(-5deg);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes dance5 {
+  0% {
+    transform: translateY(0px) translateX(0) rotate(0%);
+  }
+  10% {
+    transform: translateY(0px) translateX(5px) rotate(0%);
+  }
+  25% {
+    transform: translateY(15px) translateX(0px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0px) translateX(0) rotate(0%);
+  }
+  75% {
+    transform: translateY(16px) translateX(0px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) translateX(0) rotate(0%);
+  }
+}
+
+@keyframes dance6 {
+  0% {
+    transform: translateY(0px) translateX(0) rotate(0%);
+  }
+  10% {
+    transform: translateY(0px) translateX(-5px) rotate(0%);
+  }
+  25% {
+    transform: translateY(-17px) translateX(0px) rotate(5deg);
+  }
+  50% {
+    transform: translateY(0px) translateX(0) rotate(0%);
+  }
+  75% {
+    transform: translateY(-16px) translateX(9px) rotate(0deg);
+  }
+  100% {
+    transform: translateY(0px) translateX(0) rotate(0%);
+  }
+}
+
+#estrelasAzul {
+  animation: dance5 1s infinite;
+  margin-left: 1%;
+  top: 450px;
+  position: absolute;
+}
+
+#estrelasBrancas {
+  animation: dance5 1s infinite;
+  margin-left: 1190px;
+  top: 900px;
+  position: absolute;
+}
+
+#selo {
+  animation: dance6 1s infinite;
+  margin-left: -2%;
+  top: 1200px;
+  position: absolute;
+}
+
+#selo img {
+  width: 180px;
+  height: 180px;
+  transform: rotate(-9deg);
+}
+
+#coracao2 {
+  animation: dance5 1s infinite;
+  margin-left: 86%;
+  top: 1600px;
+  position: absolute;
+}
+
+#estrelaDourada1 img {
+  transform: rotate(5deg);
+}
+
+#estrelaDourada1 {
+  animation: dance6 1s infinite;
+  margin-left: 86%;
+  top: 50px;
+  position: absolute;
+}
+
+#estrela {
+  animation: dance6 1s infinite;
+  top: 2100px;
+  position: absolute;
+  margin-left: -1%;
+}
+
+#estrela img {
+  transform: rotate(-25deg);
+  width: 70px;
+  height: 70px;
+}
+
+#estrela3 {
+  animation: dance5 1s infinite;
+  top: 2420px;
+  position: absolute;
+  margin-left: 1200px;
+}
+
+#estrela3 img {
+  transform: rotate(-7deg);
+  width: 70px;
+  height: 70px;
+}
+@media (max-width: 740px) {
+  .title-imgs {
+    margin-top: 20px;
+  }
+  .imagens-fundo img {
+    width: 50px;
+    height: 50px;
+  }
+
+  #selo img {
+    width: 60px;
+    height: 60px;
+    margin-left: -30px;
+    top: 340px;
+  }
+
+  #estrelasBrancas {
+    margin-left: 88%;
+    top: 430px;
+  }
+}
+
+.background-experiencia {
+  width: 100%;
+}
+
+#M-img,
+#A-img,
+#J-img,
+#U-img {
+  display: inline-block;
+  height: 200px;
+}
+
+@media (max-width: 740px) {
+  #M-img,
+  #A-img,
+  #J-img,
+  #U-img {
+    height: 100px;
+  }
+}
+
+#M-img {
+  animation: dance1 1s infinite; /* Aplica a animação */
+}
+
+#A-img {
+  animation: dance2 1s infinite; /* Aplica a animação */
+}
+
+#J-img {
+  animation: dance3 1s infinite; /* Aplica a animação */
+}
+#U-img {
+  animation: dance4 1s infinite; /* Aplica a animação */
+}
+
+.negrito {
+  font-weight: bold;
+  color: #f5f0fd;
+  text-decoration: none;
+}
+
+.topico {
+  list-style-type: disc; /* Define o estilo da lista como uma bolinha */
+}
+
+.topico li {
+  margin-bottom: 22px; /* Adiciona espaçamento entre os tópicos */
+}
+.topico h3, .topico p{
+  margin-left: -5px; /* Ajusta a posição do título em relação à bolinha */
+  margin-top: 10px;
+  margin-right: 15px;
+}
+.topico li::marker {
+  font-size: 1.5em; /* Ajusta o tamanho da bolinha */
+}
+
+#tempo{
+  margin-bottom: 15px;
+}
+
+.presentation-class {
+  margin: 20px 100px;
+  margin-bottom: 50px;
+  overflow: hidden;
+}
+
+.presentation-class p {
+  margin-left: 420px; /* Adiciona margem de 10px em todos os lados do texto */
+  font-size: 23px; /* Define o tamanho da fonte */
+  line-height: 1.3; /* Adiciona espaço entre as linhas */
+}
+.presentation-class h1 {
+  font-size: 45px; /* Define o tamanho da fonte */
+  color: #29cff8;
+  margin-left: 505px; /* Adiciona margem de 10px em todos os lados do texto */
+}
+
+#presentation-img {
+  float: left;
+  margin-right: 25px;
+  width: 365px;
+  margin-top: -95px;
+}
+
+@media (max-width: 740px) {
+  .presentation-class {
+    margin: 20px 0px;
+    padding: 0px 10px;
+  }
+  .presentation-class h1 {
+    font-size: 22px;
+    margin-left: 236px;
+  }
+  .presentation-class p {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  #presentation-img {
+    width: 40%;
+    margin-top: -20px;
+    margin-right: 15px;
+    margin-left: -5px;
+  }
+}
+
+.experiencia-class {
+  background-color: #b12b2b;
+  border-radius: 6px;
+  padding: 12px;
+  margin: 0 190px;
+}
+
+.experiencia-class h2 {
+  color: #29cff8;
+  font-size: 45px; /* Define o tamanho da fonte */
+}
+.experiencia-class  h2, h3 {
+  margin: 10px; /* Adiciona margem de 10px em todos os lados do texto */
+}
+
+@media (max-width: 740px) {
+  .experiencia-class {
+    margin: 20px 0px; /* Margem menor para janelas menores que 740px */
+  }
+}
+
+#pc h2 {
+  color: #29cff8;
+  font-size: 45px; /* Define o tamanho da fonte */
+  text-align: center;
+  margin: 25px 0px;
+}
+
+.projects-class h4,
+p {
+  margin-left: 10px; /* Adiciona margem à esquerda */
+}
+
+.projects-class h4 {
+  font-size: 22px;
+}
+
+.projects-class p {
+  font-size: 18px;
+}
+
+.projects-class {
+  display: flex;
+  margin: 25px 100px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.projects-class .projetos img {
+  height: 50px; /* Defina a altura desejada */
+}
+
+.projects-class .projetos p {
+  margin: 10px 10px; /* Adiciona margem de 10px em todos os lados do texto */
+}
+.projects-class .projetos {
+  background-color: #f5f0fd;
+  border-radius: 6px;
+  width: 500px;
+  color: #290808;
+  padding: 0px 10px 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.projects-class .projetos h4 {
+  margin: 12px 0px 0px 10px;
+}
+
+.projects-class .projetos h5 {
+  display: inline-block; /* Exibe os elementos lado a lado */
+  background-color: #b12b2b; /* Cor de fundo */
+  border: none; /* Borda */
+  border-radius: 10px; /* Arredonda as bordas */
+  padding: 5px 10px; /* Espaçamento interno */
+  margin: 0px 0px 0px 10px; /* Margem entre os elementos */
+  color: #f5f0fd;
+}
+
+@media (max-width: 740px) {
+  .projects-class {
+    margin: 20px 0px;
+  }
+  .projects-class .projetos {
+    width: 100%;
+  }
+}
+
+.curses-class {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 100px;
+  justify-content: space-between;
+  color: #290808;
+}
+
+.curses-class h4 {
+  margin: 10px 10px 0px 10px;
+  font-size: 22px;
+}
+
+.curses-class p {
+  margin: 10px 10px 0px 10px;
+  font-size: 18px;
+  padding: 2px;
+}
+
+.cursos {
+  width: 320px;
+  height: 320px;
+  margin: 5px;
+  border-radius: 6px;
+  background-color: #f5f0fd;
+  cursor: pointer;
+}
+
+.cursos img {
+  max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
+  border-radius: 6px 6px 0 0; /* Arredondar apenas os cantos superiores da imagem */
+  margin: 0; /* Remover margem interna */
+  padding: 0; /* Remover padding */
+}
+
+@media (max-width: 740px) {
+  .curses-class {
+    margin: 20px 100px 20px 100px;
+    justify-content: center;
+  }
+  .cursos {
+    width: 320px;
+    height: 320px;
+  }
+}

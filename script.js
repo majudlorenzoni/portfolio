@@ -10,6 +10,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkedin = document.getElementById('linkedin');
   const github = document.getElementById('github');
 
+  // Obtém a largura e altura da janela do navegador em pixels
+  let screenWidth = window.innerWidth;
+  let screenHeight = window.innerHeight;
+
+console.log("Largura da tela: " + screenWidth + "px");
+console.log("Altura da tela: " + screenHeight + "px");
+
   editor.onclick = function() {
     window.open('https://github.com/majudlorenzoni/Computacao-Grafica', '_blank');
   };

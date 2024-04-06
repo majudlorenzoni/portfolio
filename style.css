@@ -13,6 +13,40 @@ body {
   text-align: justify;
 }
 
+
+@media (max-width: 430px) {
+
+  body {
+    font-size: 16px; /* Reduza o tamanho da fonte para melhorar a legibilidade em telas menores */
+    margin: 10px; /* Reduza a margem geral do corpo */
+  } 
+  #presentation-title{
+    font-size: 19.5px; /* Reduza o tamanho da fonte do título */
+    display:flex;
+    justify-content: right;
+    margin: auto;
+
+  }
+
+  .presentation-class p {
+    margin-left: 5px; /* Ajuste a margem esquerda do texto */
+    font-size: 12px; /* Reduza o tamanho da fonte do texto */
+  }
+  .experiencia-class h2 {
+    font-size: 25px; /* Reduza o tamanho da fonte do título */
+  }
+
+  .cursos {
+    width: 300px;
+    margin: -20px 0px -20px 0px;
+  
+  }
+  #estrela3 img {
+    width: 50px;
+    height: 50px;
+    margin-left: -750px;
+  }
+}
 header {
   text-align: center;
   margin-top: 25px;
@@ -60,7 +94,6 @@ header h1 {
   cursor: pointer;
 }
 .imagens-fundo img {
-  position: fixed; /* Fixa as imagens no lugar */
   width: 100px; /* Largura da imagem */
   height: 100px; /* Altura da imagem */
 }
@@ -270,9 +303,9 @@ header h1 {
     top: 430px;
   }
 }
-
 .background-experiencia {
   width: 100%;
+
 }
 
 #M-img,
@@ -508,11 +541,11 @@ p {
 
 @media (max-width: 740px) {
   .curses-class {
-    margin: 20px 100px 20px 100px;
+    margin: 20px 0px;
     justify-content: center;
   }
   .cursos {
-    width: 320px;
-    height: 320px;
+    width: 340px;
+    height: 340px;
   }
 }

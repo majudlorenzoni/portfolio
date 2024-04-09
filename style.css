@@ -37,7 +37,8 @@ body {
   }
 
   .cursos {
-    width: 300px;
+    width: 300px
+    ;
     margin: -20px 0px -20px 0px;
   
   }
@@ -524,8 +525,8 @@ p {
 }
 
 .cursos {
-  width: 320px;
-  height: 320px;
+  width: 250px;
+  height: 325px;
   margin: 5px;
   border-radius: 6px;
   background-color: #f5f0fd;
@@ -545,7 +546,7 @@ p {
     justify-content: center;
   }
   .cursos {
-    width: 340px;
+    width: 250px;
     height: 340px;
   }
 }

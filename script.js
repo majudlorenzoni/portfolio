@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const compraIngressos = document.getElementById('compraIngressos');
   const pet = document.getElementById('pet');
   const sistemaSolar = document.getElementById('sistemaSolar');
+  const condicaoTempo = document.getElementById('condicaoTempo');
   const cursoReact = document.getElementById('cursoReact');
   const cursoIngles = document.getElementById('cursoIngles');
   const cursoAnimacao = document.getElementById('cursoAnimacao');
@@ -31,6 +32,10 @@ compraIngressos.onclick = function() {
   
   sistemaSolar.onclick = function() {
     window.open('https://github.com/majudlorenzoni/solarSystem', '_blank');
+  }
+
+  condicaoTempo.onclick = function() {
+    window.open('https://github.com/majudlorenzoni/cursoReact_ADA', '_blank');
   }
   
   cursoReact.onclick = function() {

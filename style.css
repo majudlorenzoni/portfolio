@@ -509,8 +509,8 @@ p {
   display: flex;
   flex-wrap: wrap;
   margin: 25px 100px;
-  justify-content: space-between;
-  color: #290808;
+  justify-content: flex-start;
+    color: #290808;
 }
 
 .curses-class h4 {

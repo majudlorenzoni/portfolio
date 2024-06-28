@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkedin = document.getElementById('linkedin');
   const github = document.getElementById('github');
   const cursoGit = document.getElementById('cursoGit');
-  // Obtém a largura e altura da janela do navegador em pixels
+
   let screenWidth = window.innerWidth;
   let screenHeight = window.innerHeight;
 

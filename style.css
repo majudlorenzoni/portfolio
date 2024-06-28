@@ -14,40 +14,52 @@ body {
 }
 
 
-@media (max-width: 430px) {
+@media (max-width: 768px) {
+  body {
+    font-size: 18px; /* Diminuir o tamanho da fonte para telas menores */
+    margin: 10px 20px; /* Reduzir a margem para telas menores */
+  }
+}
 
+@media (max-width: 480px) {
+  body {
+    font-size: 16px; /* Diminuir ainda mais o tamanho da fonte */
+    margin: 10px 10px; /* Reduzir ainda mais a margem */
+  }
+}
+
+@media (max-width: 430px) {
   body {
     font-size: 16px; /* Reduza o tamanho da fonte para melhorar a legibilidade em telas menores */
     margin: 10px; /* Reduza a margem geral do corpo */
-  } 
-  #presentation-title{
+  }
+
+  #presentation-title {
     font-size: 19.5px; /* Reduza o tamanho da fonte do título */
-    display:flex;
+    display: flex;
     justify-content: right;
     margin: auto;
-
   }
 
   .presentation-class p {
     margin-left: 5px; /* Ajuste a margem esquerda do texto */
     font-size: 12px; /* Reduza o tamanho da fonte do texto */
   }
+
   .experiencia-class h2 {
     font-size: 25px; /* Reduza o tamanho da fonte do título */
   }
 
   .cursos {
-    width: 300px
-    ;
-    margin: -20px 0px -20px 0px;
-  
+    width: 300px;
+    margin: -20px 0px -20px 0px; /* Ajuste a margem do elemento */
   }
-  #estrela3 img {
-    width: 50px;
-    height: 50px;
-    margin-left: -750px;
+
+  #estrelaDourada1, #estrela, #estrela3, #estrelasAzul, #estrelasBrancas{
+    display: none;
   }
 }
+
 header {
   text-align: center;
   margin-top: 25px;
@@ -267,22 +279,23 @@ header h1 {
 
 #estrela img {
   transform: rotate(-25deg);
-  width: 70px;
-  height: 70px;
+  width: 100%;
 }
 
 #estrela3 {
   animation: dance5 1s infinite;
   top: 2420px;
   position: absolute;
-  margin-left: 1200px;
+  left: 91%; 
+  transform: translateX(-50%);
+  margin-left: 0; 
 }
 
 #estrela3 img {
   transform: rotate(-7deg);
-  width: 70px;
-  height: 70px;
+  width: 40px;
 }
+
 @media (max-width: 740px) {
   .title-imgs {
     margin-top: 20px;
@@ -446,7 +459,7 @@ header h1 {
 
 .projects-class h4,
 p {
-  margin-left: 10px; /* Adiciona margem à esquerda */
+  margin-left: 10px; 
 }
 
 .projects-class h4 {
@@ -464,12 +477,9 @@ p {
   flex-wrap: wrap;
 }
 
-.projects-class .projetos img {
-  height: 50px; /* Defina a altura desejada */
-}
 
 .projects-class .projetos p {
-  margin: 10px 10px; /* Adiciona margem de 10px em todos os lados do texto */
+  margin: 10px 10px; 
 }
 .projects-class .projetos {
   background-color: #f5f0fd;
@@ -478,7 +488,6 @@ p {
   color: #290808;
   padding: 0px 10px 10px;
   margin-bottom: 15px;
-  cursor: pointer;
   position: relative;
 }
 
@@ -487,30 +496,75 @@ p {
 }
 
 .projects-class .projetos h5 {
-  display: inline-block; /* Exibe os elementos lado a lado */
-  background-color: #b12b2b; /* Cor de fundo */
-  border: none; /* Borda */
-  border-radius: 10px; /* Arredonda as bordas */
-  padding: 5px 10px; /* Espaçamento interno */
-  margin: 0px 0px 0px 10px; /* Margem entre os elementos */
+  display: inline-block;
+  background-color: #b12b2b; 
+  border: none; 
+  border-radius: 10px; 
+  padding: 5px 10px; 
+  margin: 0px 0px 0px 10px; 
   color: #f5f0fd;
 }
 
+.projects-class .projetos{
+  cursor: pointer;
+}
+
+.projects-class .gif-projetos {
+  display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  width: 100%;
+}
+
+.projects-class .gif-projetos img{
+  margin: 10px;
+  max-height: 230px;
+  flex: 1 1 300px;
+}
+
+
+/* Media query para tablets e telas menores */
 @media (max-width: 740px) {
   .projects-class {
     margin: 20px 0px;
+    justify-content: center; 
   }
   .projects-class .projetos {
     width: 100%;
   }
+  .projects-class .gif-projetos img {
+    max-width: 100%; /* Assegure que as imagens não excedam a largura do contêiner */
+  }
 }
+
+
+@media (max-width: 480px) {
+  .projects-class {
+    margin: 15px 5px; /* Ajuste a margem para telas ainda menores */
+    justify-content: center; /* Centralizar itens */
+  }
+  .projects-class .projetos {
+    width: 100%; /* Ajuste a largura para 100% em telas menores */
+  }
+
+  .projects-class h4 {
+    font-size: 20px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+  .projects-class p {
+    font-size: 16px; /* Ajuste o tamanho da fonte para telas menores */
+  }
+  .projects-class .projetos {
+    padding: 10px; /* Ajuste o padding para telas menores */
+  }
+}
+
 
 .curses-class {
   display: flex;
   flex-wrap: wrap;
   margin: 25px 100px;
   justify-content: flex-start;
-    color: #290808;
+  color: #290808;
 }
 
 .curses-class h4 {
@@ -540,13 +594,58 @@ p {
   padding: 0; /* Remover padding */
 }
 
+/* Media query para tablets e telas menores */
 @media (max-width: 740px) {
   .curses-class {
-    margin: 20px 0px;
-    justify-content: center;
+    margin: 20px 10px;
+    justify-content: center; /* Centralizar os itens em telas menores */
   }
   .cursos {
-    width: 250px;
-    height: 340px;
+    width: 100%; /* Ajuste a largura para 100% em telas menores */
+    height: auto; /* Ajuste a altura para auto para manter a proporção */
+  }
+  .curses-class h4 {
+    font-size: 20px; /* Ajuste o tamanho da fonte em telas menores */
+  }
+  .curses-class p {
+    font-size: 16px; /* Ajuste o tamanho da fonte em telas menores */
+  }
+}
+
+/* Media query para smartphones e telas ainda menores */
+@media (max-width: 480px) {
+  .curses-class {
+    margin: 15px 5px;
+    flex-direction: column; /* Altere a direção do flex para coluna */
+    align-items: center; /* Centralizar os itens em telas muito pequenas */
+  }
+  .cursos {
+    width: 100%; /* Ajuste a largura para 100% em telas muito pequenas */
+    height: auto; /* Ajuste a altura para auto para manter a proporção */
+    margin: 10px 0; /* Ajuste a margem para melhorar o espaçamento */
+  }
+  .curses-class h4 {
+    font-size: 18px; /* Ajuste o tamanho da fonte em telas muito pequenas */
+  }
+  .curses-class p {
+    font-size: 14px; /* Ajuste o tamanho da fonte em telas muito pequenas */
+  }
+}
+
+/* Media query para telas maiores */
+@media (min-width: 1024px) {
+  .curses-class {
+    margin: 30px 150px; /* Ajuste a margem para telas maiores */
+    justify-content: space-around; /* Espaçar os itens uniformemente */
+  }
+  .cursos {
+    width: 300px; /* Aumente a largura para telas maiores */
+    height: 350px; /* Aumente a altura para telas maiores */
+  }
+  .curses-class h4 {
+    font-size: 24px; /* Aumente o tamanho da fonte em telas maiores */
+  }
+  .curses-class p {
+    font-size: 20px; /* Aumente o tamanho da fonte em telas maiores */
   }
 }

@@ -457,8 +457,7 @@ header h1 {
   margin: 25px 0px;
 }
 
-.projects-class h4,
-p {
+.projects-class h4 {
   margin-left: 10px; 
 }
 
@@ -578,74 +577,80 @@ p {
   padding: 2px;
 }
 
+.curses-container {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os elementos ocupem várias linhas */
+  justify-content: space-around; /* Espaçamento uniforme dos elementos */
+  gap: 20px; /* Espaçamento entre os elementos */
+  margin: 30px auto;
+  max-width: 1200px; /* Largura máxima para manter o layout consistente */
+}
+
 .cursos {
-  width: 250px;
-  height: 325px;
-  margin: 5px;
-  border-radius: 6px;
+  width: 350px; /* Tamanho do box */
+  height: 450px; /* Altura do box */
+  margin: 10px;
+  border-radius: 10px;
+  color: #290808;
   background-color: #f5f0fd;
   cursor: pointer;
+  text-align: center; /* Centralizando o texto */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centralizar o conteúdo horizontalmente */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  padding: 5px; /* Adicionando padding interno */
+  transition: transform 0.3s ease; /* Animação ao passar o mouse */
+}
+
+.cursos:hover {
+  transform: scale(1.05); /* Efeito ao passar o mouse */
 }
 
 .cursos img {
-  max-width: 100%; /* Garantir que a imagem não ultrapasse o contêiner */
-  border-radius: 6px 6px 0 0; /* Arredondar apenas os cantos superiores da imagem */
-  margin: 0; /* Remover margem interna */
-  padding: 0; /* Remover padding */
+  max-width: 100%;
+  border-radius: 6px 6px 0 0;
+}
+
+.cursos h4 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.cursos p {
+  font-size: 16px;
+  padding: 10px; /* Adicionando padding interno ao texto */
+  text-align: justify; /* Justificando o texto para melhorar a leitura */
 }
 
 /* Media query para tablets e telas menores */
 @media (max-width: 740px) {
-  .curses-class {
-    margin: 20px 10px;
+  .curses-container {
     justify-content: center; /* Centralizar os itens em telas menores */
   }
   .cursos {
     width: 100%; /* Ajuste a largura para 100% em telas menores */
-    height: auto; /* Ajuste a altura para auto para manter a proporção */
-  }
-  .curses-class h4 {
-    font-size: 20px; /* Ajuste o tamanho da fonte em telas menores */
-  }
-  .curses-class p {
-    font-size: 16px; /* Ajuste o tamanho da fonte em telas menores */
+    height: auto; /* Ajuste a altura para manter a proporção */
   }
 }
 
 /* Media query para smartphones e telas ainda menores */
 @media (max-width: 480px) {
-  .curses-class {
-    margin: 15px 5px;
+  .curses-container {
     flex-direction: column; /* Altere a direção do flex para coluna */
     align-items: center; /* Centralizar os itens em telas muito pequenas */
   }
   .cursos {
-    width: 100%; /* Ajuste a largura para 100% em telas muito pequenas */
-    height: auto; /* Ajuste a altura para auto para manter a proporção */
-    margin: 10px 0; /* Ajuste a margem para melhorar o espaçamento */
-  }
-  .curses-class h4 {
-    font-size: 18px; /* Ajuste o tamanho da fonte em telas muito pequenas */
-  }
-  .curses-class p {
-    font-size: 14px; /* Ajuste o tamanho da fonte em telas muito pequenas */
+    width: 100%;
+    height: auto;
+    margin: 10px 0;
   }
 }
 
 /* Media query para telas maiores */
 @media (min-width: 1024px) {
-  .curses-class {
-    margin: 30px 150px; /* Ajuste a margem para telas maiores */
-    justify-content: space-around; /* Espaçar os itens uniformemente */
-  }
   .cursos {
-    width: 300px; /* Aumente a largura para telas maiores */
-    height: 350px; /* Aumente a altura para telas maiores */
-  }
-  .curses-class h4 {
-    font-size: 24px; /* Aumente o tamanho da fonte em telas maiores */
-  }
-  .curses-class p {
-    font-size: 20px; /* Aumente o tamanho da fonte em telas maiores */
+    width: 300px;
+    height: 350px;
   }
 }

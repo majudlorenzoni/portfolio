@@ -11,16 +11,25 @@ document.addEventListener('DOMContentLoaded', function() {
   const linkedin = document.getElementById('linkedin');
   const github = document.getElementById('github');
   const cursoGit = document.getElementById('cursoGit');
-
+  const womanServicesAPI = document.getElementById('apiWomanServices');
+  const spotifyApi = document.getElementById('spotify');
   let screenWidth = window.innerWidth;
   let screenHeight = window.innerHeight;
 
 console.log("Largura da tela: " + screenWidth + "px");
 console.log("Altura da tela: " + screenHeight + "px");
 
+spotifyApi.onclick = function() {
+  window.open('https://github.com/majudlorenzoni/monks-case?tab=readme-ov-file', '_blank');
+};
+
 editor.onclick = function() {
   window.open('https://github.com/majudlorenzoni/Computacao-Grafica', '_blank');
 };
+
+womanServicesAPI.onclick = function() {
+  window.open('https://github.com/majudlorenzoni/woman-services-plataform', '_blank');
+}
 
 compraIngressos.onclick = function() {
   window.open('https://github.com/majudlorenzoni/compra_online_ingressos-BD', '_blank');

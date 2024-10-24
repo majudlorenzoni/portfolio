@@ -617,6 +617,10 @@ header h1 {
   font-weight: bold;
 }
 
+div#openUsd1.cursos h4 {
+  font-size: 18px !important;
+}
+
 .cursos p {
   font-size: 16px;
   padding: 10px; /* Adicionando padding interno ao texto */
@@ -655,6 +659,3 @@ header h1 {
   }
 }
 
-div#openUsd1.cursos h4{
-  font-size: 18px;
-}
